@@ -1,0 +1,16 @@
+.kalbos .vardas{
+    text-align: center;
+}
+.kalbos .vardas select{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-family: 'Raleway', sans-serif;
+}
+#kalbos-div{
+    flex: 1;
+}
+#lygis-div{
+    flex: 2;
+}

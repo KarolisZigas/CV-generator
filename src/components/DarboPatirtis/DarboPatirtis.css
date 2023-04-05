@@ -1,0 +1,134 @@
+.skirtukas:not(:first-child){
+    padding-top: 25px;
+    margin-top: 20px;
+    border-top: 1px solid black;
+}
+.check{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.check label{
+    margin-left: 15px;
+}
+.check button{
+    padding: 10px;
+    margin: 10px 5px;
+    border-radius: 50px;
+    font-family: 'Raleway', sans-serif;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.check button:hover{
+    background:rgba(0, 0, 0, 0.2);
+    border: 0.5px solid rgba(0, 0, 0, 1);
+    cursor: pointer;
+}
+.darbas .textarea{
+    margin: 10px 0;
+    width: 100%;
+    margin-left: 10px;
+}
+#teksto-laukelis{
+    margin: 10px;
+}
+.pasalinti{
+    margin: 10px;
+    width: auto;
+    max-width: 225px;
+    max-height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    background: #f7f7f7;
+    border-radius: 35px;
+    z-index: 1;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+}
+.prideti{
+    margin: 10px;
+    width: auto;
+    max-width: 225px;
+    max-height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    background: #f7f7f7;
+    border-radius: 35px;
+    z-index: 1;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+}
+.prideti h4, .pasalinti h4{
+    width: 60%;
+}
+iconify-icon{
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0 auto;
+}
+iconify-icon:hover{
+    cursor: pointer;
+    color: rgb(184, 184, 184);
+}
+#darbo-patirtis-div{
+    margin-bottom: 50px;
+    position: relative;
+}
+.absoliutus{
+    position: absolute;
+    right: 253px;
+    bottom: 9px;
+    width: 212px;
+    height: auto;
+}
+.pavadinimas{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+@media only screen and (min-width: 1651px){
+    .absoliutus{
+        right: 300px;
+        bottom: 9px;
+    }
+    #darbo-patirtis-div{
+        position: relative;
+    }
+    .pavadinimas iconify-icon{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1650px){
+    .pavadinimas iconify-icon{
+        display: none;
+    }
+    .absoliutus{
+        right: 180px;
+        width: auto;
+    }
+    .absoliutus h4{
+        display: none;
+        width: auto;
+    }
+}
+@media only screen and (max-width: 1199px){
+    .pavadinimas iconify-icon{
+        display: block;
+    }
+    #darbo-patirtis-div{
+        position: static;
+    }
+    .absoliutus{
+        display: none;
+    }
+}
+@media only screen and (max-width: 999px){
+    .absoliutus{
+        display: none;
+    }
+    .pavadinimas iconify-icon{
+        display: block;
+    }
+}

@@ -1,0 +1,132 @@
+.Appsas{
+    display: flex;
+    height: auto;
+    background-image: url("background.png");
+}
+.content{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: calc(100% - 16.55%);
+    border-right: 1px solid black;
+}
+.content .turinys-nuotrauka{
+    width: 450px;
+    position: absolute;
+    top: -70px;
+    right: -59px;
+    transform: rotate(20deg);
+    z-index: 1;
+    overflow: hidden;
+}
+.content .turinys-nuotrauka2{
+    width: 450px;
+    position: absolute;
+    left: -58px;
+    bottom: -52px;
+    transform: rotate(200deg);
+    z-index: 0;
+    overflow: hidden;
+}
+.headeris{
+    background: #f2f2f2;
+    height: 100vh;
+    width: 16.55%;
+    min-width: 315px;
+    display: flex;
+    flex-direction: column;
+    z-index: 99;
+    border-left: 1px solid black;
+    position: sticky;
+    top: 0%;
+}
+.headeris > *{
+    font-family: 'Raleway', sans-serif;
+}
+.headeris .headeris-virsus{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 35px;
+    box-sizing: border-box;
+}
+.headeris ul{
+    margin: 0 auto;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+.headeris .headeris-content{
+    align-items: center;
+}
+.headeris h1{
+    text-align: center;
+}
+.headeris-nuotrauka{
+    display: block;
+    margin: 70px auto 100px;
+    width: 100px;
+    max-width: 100%;
+    border: none;
+    animation: rotation 30s infinite linear;
+    /* animation-duration: 10s; */
+}
+@keyframes rotation{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.headeris .headeris-content ul li{
+    margin: 12px auto;
+    cursor: pointer;
+    padding: 5px;
+    width: 50%;
+}
+.headeris .headeris-mygtukai{
+    text-align: center;
+}
+.headeris .headeris-mygtukai button{
+    min-width: 82px;
+    padding: 10px;
+    margin: 10px 5px;
+    border-radius: 50px;
+    font-family: 'Raleway', sans-serif;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.headeris .headeris-mygtukai button:hover{
+    background:rgba(0, 0, 0, 0.2);
+    border: 0.5px solid rgba(0, 0, 0, 1);
+    cursor: pointer;
+}
+@media only screen and (max-width: 780px){
+    .headeris{
+        position: fixed;
+        display: none;
+        z-index: 4;
+    }
+    .content{
+        width: 100%;
+    }
+    .turinys-nuotrauka2{
+        left: 0;
+    }
+}
+@media only screen and (min-width: 781px){
+    .headeris{
+        display: block;
+    }
+    .content{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 880px){
+    .headeris{
+        display: block;
+    }
+}
+.pazymetas{
+    border-left: 4px solid rgb(151, 14, 14);
+}

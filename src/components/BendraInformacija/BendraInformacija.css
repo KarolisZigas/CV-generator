@@ -1,0 +1,179 @@
+.header-hidden{
+    background-color: #f2f2f2;
+    height: 10vh;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    justify-content: space-between;
+    z-index: 3;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+    display: none;
+    font-family: 'Raleway', sans-serif;
+}
+.header-hidden button{
+    position: absolute;
+    min-width: 82px;
+    padding: 10px;
+    margin: 10px 5px;
+    border-radius: 50px;
+    font-family: 'Raleway', sans-serif;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.header-hidden button:hover{
+    background:rgba(0, 0, 0, 0.2);
+    border: 0.5px solid rgba(0, 0, 0, 1);
+    cursor: pointer;
+}
+.header-hidden h1{
+    margin: 0 auto;
+}
+.header-hidden-nuotrauka{
+    display: block;
+    margin: 0;
+    margin-right: 13px;
+    width: 50px;
+    border: none;
+}
+.header-hidden-mygtukas{
+    transform: translateX(50px);
+}
+.header-hidden-pavadinimas{
+    display: flex;
+    align-items: center;
+}
+.header-hidden-a{
+    text-decoration: none;
+    color: black;
+    transform: translateX(50%);
+}
+/* TURINYS---------------------------------
+-------------------------------------------
+-------------------------------------------- */
+.turinys-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    margin: 70px auto 0;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+.turinys-wrapper > *{
+    font-family: 'Raleway', sans-serif;
+}
+.turinys-wrapper p{
+    margin: 0;
+}
+.turinys-wrapper .input-div{
+    margin: 10px auto;
+    width: 500px;
+    background: #f7f7f7;
+    width: 400px;
+    padding: 50px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 25px;
+}
+
+.turinys-wrapper .input-div h1{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+.turinys-wrapper .input-div h2{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+.turinys-wrapper .input-div h3{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+.turinys-wrapper .input-div .vardas-parent{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+}
+.turinys-wrapper .input-div .vardas{
+    width: 45%;
+    margin: 10px;
+}
+.turinys-wrapper .input-div .vardas label{
+    text-align: left;
+}
+.turinys-wrapper .input-div .vardas input{
+    font-family: 'Raleway', sans-serif;
+    margin-top: 5px;
+    padding: 5px;
+    width: 93%;
+}
+.turinys-wrapper .input-div .input-div-laukelis{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 370px;
+    padding: 5px;
+    font-family: 'Raleway', sans-serif;
+}
+.turinys-wrapper .input-div textarea{
+    resize:none;
+    font-size: 14px;
+}
+.turinys-wrapper .input-div .input-div-label{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 8px;
+}
+@media only screen and (min-width: 1501px){
+    .turinys-wrapper .input-div{
+        position: static;
+    }
+}
+
+@media only screen and (max-width: 780px){
+    .turinys-wrapper{
+        margin: 0 auto;
+    }
+    #pirmas-turinys-wrapper{
+        padding-top: 100px;
+    }
+    .header-hidden{
+        display: flex;
+    }
+    
+}
+@media only screen and (max-width: 450px){
+    .turinys-wrapper .input-div{
+        margin: 10px auto;
+        background: #f2f2f2;
+        width: 300px;
+        padding: 25px;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 25px;
+    }
+    .turinys-wrapper .input-div .vardas-parent{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 70px;
+    }
+    .turinys-wrapper .input-div .vardas{
+        width: 45%;
+        margin: 10px;
+    }
+    .turinys-wrapper .input-div .vardas input{
+        font-family: 'Raleway', sans-serif;
+        margin-top: 5px;
+        padding: 5px;
+        width: 70%;
+    }
+}

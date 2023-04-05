@@ -1,0 +1,10 @@
+.igudziai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.igudziai label{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
